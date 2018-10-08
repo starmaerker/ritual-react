@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Rituals from './Rituals';
+import Calendar from './Calendar';
+import '../App.css';
 
 class App extends Component {
   render() {
@@ -8,20 +9,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>Ritual App</h2>
-          <Button />
         </header>
+        <div>
+          <Calendar />
+        </div>
+        <main>
+          <Rituals />
+        </main>
       </div>
     );
-  }
-}
-
-class Button extends Component {
-  render() {
-    return (
-      <button onClick="">
-        Log in 
-      </button>
-    )
   }
 }
 
