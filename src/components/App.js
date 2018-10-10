@@ -16,7 +16,7 @@ class App extends Component {
         <header className="App-header">
           <h2>Ritual App</h2>
         </header>
-        <div>
+        <div className="Calendar">
           <Calendar
             onChange={this.onChange}
             value={this.state.date}
