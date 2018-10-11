@@ -23,7 +23,9 @@ class App extends Component {
           />
         </div>
         <main>
-          <Rituals />
+          <Rituals 
+            value={this.state.date}
+          />
         </main>
       </div>
     );
