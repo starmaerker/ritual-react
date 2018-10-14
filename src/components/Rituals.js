@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import App from './App';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, fashower } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faShower } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faCoffee);
-library.add(fashower);
+library.add(faShower);
 
 class Rituals extends Component {
 
@@ -19,9 +19,10 @@ class Rituals extends Component {
                 <h1>My Rituals</h1>
                 <h3>{JSON.stringify(this.props.value)}</h3>
                 <h2>List of Rituals</h2>
-                {listOfRituals.map(item => (<p>{item}<input type="checkbox" name="success" /></p>))}
+                {listOfRituals.map(item => (<span>{item}<input type="checkbox" name="success" /></span>))}
                 <h3>List of Challenges</h3>
-                {listOfChallenges.map(item => (<p>{item}<input type="checkbox" name="success" /></p>))}
+                {listOfChallenges.map(item => (<span>{item}<input type="checkbox" name="success" /></span>))}
+                <br />
                 <button name="report" type="submit">Submit Daily Report</button>
             </div>
             
